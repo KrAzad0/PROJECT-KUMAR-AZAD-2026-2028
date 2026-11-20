@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "workspace_name": "Kumar Azad Research Workspace",
+  "period": "2026–2028",
+  "updated": "2026-11-20",
+  "notice": "Project entries are working scopes and research intentions. They do not imply peer-reviewed publications, completed simulations, or verified original results.",
+  "tracks": [
+    "Physics",
+    "Mathematics",
+    "AI & Scientific Computing",
+    "Quantum Computing"
+  ],
+  "projects": [
+    {
+      "id": "toroidal-hydrogen",
+      "title": "Hydrogen in Toroidal Confinement",
+      "track": "Physics",
+      "status": "In development",
+      "phase": "Mathematical model",
+      "summary": "Explore how an electron bound to a proton behaves within an idealized three-dimensional solid-torus domain, and how a prescribed attosecond field changes its dynamics.",
+      "question": "Can a self-adjoint confined Coulomb model be defined and numerically converged before introducing a pulsed field?",
+      "methods": [
+        "Schrödinger equation",
+        "Boundary conditions",
+        "Spectral methods",
+        "MATLAB"
+      ],
+      "next_step": "Specify torus geometry, nuclear location and boundary conditions; reproduce the field-free limit and perform grid/basis convergence.",
+      "validation": "Check Hermiticity, norm conservation, ground-state convergence and justified free-space or limiting-geometry benchmarks.",
+      "links": [
+        {
+          "label": "Current torus research notes",
+          "url": "https://krazad0.github.io/research/torus/"
+        },
+        {
+          "label": "Light–Matter Interaction notes",
+          "url": "https://krazad0.github.io/light-matter-interaction/"
+        }
+      ]
+    },
+    {
+      "id": "ultrafast-electron-dynamics",
+      "title": "Attosecond-Driven Electron Dynamics",
+      "track": "Physics",
+      "status": "Scoping",
+      "phase": "Benchmark selection",
+      "summary": "Study time-resolved electronic transitions under finite electromagnetic pulses, beginning with solvable or independently reproducible quantum models.",
+      "question": "Which transition probabilities and observables are stable under basis, time-step and pulse-parameter refinement?",
+      "methods": [
+        "TDSE",
+        "Dipole interaction",
+        "Time-dependent perturbation theory",
+        "MATLAB"
+      ],
+      "next_step": "Benchmark a weak-field hydrogen transition or a driven oscillator before adding geometric confinement.",
+      "validation": "Compare perturbative limits, conserve probability and report spectral bandwidth and physical units.",
+      "links": [
+        {
+          "label": "Quantum Mechanics",
+          "url": "https://krazad0.github.io/quantum-mechanics/"
+        },
+        {
+          "label": "Light–Matter Interaction",
+          "url": "https://krazad0.github.io/light-matter-interaction/"
+        }
+      ]
+    },
+    {
+      "id": "symbolic-quantum-mathematica",
+      "title": "Symbolic Quantum Mechanics with Mathematica",
+      "track": "Mathematics",
+      "status": "Scoping",
+      "phase": "Reproducible symbolic notebooks",
+      "summary": "Develop a systematic symbolic workflow for quantum-mechanical operators, eigenvalue equations, special functions, angular momentum and verification of closed-form solutions.",
+      "question": "How can symbolic calculations be independently checked rather than taken as black-box outputs?",
+      "methods": [
+        "Mathematica",
+        "Operator algebra",
+        "Special functions",
+        "Analytical checks"
+      ],
+      "next_step": "Create a notebook that verifies harmonic-oscillator commutators, hydrogen radial states and normalization integrals.",
+      "validation": "Verify residuals, assumptions, operator domains, dimensional consistency and independent limiting cases.",
+      "links": [
+        {
+          "label": "Mathematical Physics foundations",
+          "url": "https://krazad0.github.io/mathematical-physics/"
+        },
+        {
+          "label": "Quantum Mechanics notes",
+          "url": "https://krazad0.github.io/quantum-mechanics/"
+        }
+      ]
+    },
+    {
+      "id": "differential-equations",
+      "title": "Differential Equations & Spectral Methods",
+      "track": "Mathematics",
+      "status": "Study",
+      "phase": "Methods and benchmarks",
+      "summary": "Build analytical and numerical foundations in ODEs, PDEs, Sturm–Liouville problems, Green functions and conservative finite-difference schemes.",
+      "question": "How accurately do numerical spectra and evolution schemes reproduce analytically solvable boundary-value problems?",
+      "methods": [
+        "ODE & PDE",
+        "Sturm–Liouville",
+        "Green functions",
+        "Finite differences"
+      ],
+      "next_step": "Reproduce the constant-diffusivity heat equation and compare variable-diffusivity numerical solvers.",
+      "validation": "Track mesh/time-step convergence, self-adjointness and energy dissipation identities.",
+      "links": [
+        {
+          "label": "Differential Equations notes",
+          "url": "https://krazad0.github.io/differential-equations/"
+        }
+      ]
+    },
+    {
+      "id": "positive-geometry",
+      "title": "Positive Geometry & Canonical Forms",
+      "track": "Mathematics",
+      "status": "Study",
+      "phase": "Foundational reproduction",
+      "summary": "Learn positive Grassmannians, oriented boundaries, canonical logarithmic forms and the amplituhedron construction through worked mathematical examples.",
+      "question": "Can canonical forms and their residues be derived and checked for elementary positive geometries?",
+      "methods": [
+        "Grassmannians",
+        "Differential forms",
+        "Residues",
+        "Symbolic derivations"
+      ],
+      "next_step": "Verify canonical forms of intervals and triangles, then work through a nontrivial Grassmannian example.",
+      "validation": "Check boundary orientations, residues and references against original literature.",
+      "links": [
+        {
+          "label": "Positive Geometry notes",
+          "url": "https://krazad0.github.io/positive-geometry/"
+        }
+      ]
+    },
+    {
+      "id": "ai-for-physics",
+      "title": "AI for Scientific Computation",
+      "track": "AI & Scientific Computing",
+      "status": "Idea",
+      "phase": "Feasibility study",
+      "summary": "Explore machine-learning tools for scientific surrogates, data fitting and physics-constrained models while keeping numerical ground truth as the reference.",
+      "question": "When does a learned approximation improve computation without hiding physical or numerical errors?",
+      "methods": [
+        "Python",
+        "Scientific ML",
+        "Model validation",
+        "Numerical baselines"
+      ],
+      "next_step": "Select a simple ODE/PDE benchmark and compare a conventional solver with a small neural surrogate.",
+      "validation": "Separate train/test regimes and report generalization error, conservation residuals and compute cost.",
+      "links": [
+        {
+          "label": "Differential Equations foundations",
+          "url": "https://krazad0.github.io/differential-equations/"
+        }
+      ]
+    },
+    {
+      "id": "quantum-computing",
+      "title": "Quantum Algorithms & Simulation",
+      "track": "Quantum Computing",
+      "status": "Idea",
+      "phase": "Algorithm selection",
+      "summary": "Build small, reproducible quantum-computing demonstrations before considering variational or optimization extensions.",
+      "question": "Which small quantum algorithms can be verified against exact classical state-vector calculations?",
+      "methods": [
+        "Quantum circuits",
+        "Linear algebra",
+        "State vectors",
+        "Qiskit"
+      ],
+      "next_step": "Implement one- and two-qubit gates, Bell-state generation and measurements; validate against analytical predictions.",
+      "validation": "Check unitarity, measurement probabilities and classical simulator agreement; distinguish ideal circuits from hardware noise.",
+      "links": [
+        {
+          "label": "Quantum Mechanics foundations",
+          "url": "https://krazad0.github.io/quantum-mechanics/"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "year": "2026",
+      "label": "Foundations & benchmark definitions",
+      "description": "Define models, gather literature, write testable hypotheses and reproduce simple analytical baselines.",
+      "status": "Planned"
+    },
+    {
+      "year": "2027",
+      "label": "Numerical and symbolic verification",
+      "description": "Expand converged simulations, symbolic notebooks, documentation and comparative studies.",
+      "status": "Planned"
+    },
+    {
+      "year": "2028",
+      "label": "Research synthesis & dissemination",
+      "description": "Compile validated results, clearly state limitations, and prepare reports or submissions if warranted.",
+      "status": "Planned"
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-11-20",
+      "title": "Research workspace initialized",
+      "note": "Created the tracked research themes, project-update schema and validation-oriented roadmap. No research result is claimed by this entry."
+    }
+  ]
+}
